@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+  <edmx:DataServices>
+    <Schema Namespace="TestService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+      <EntityContainer Name="EntityContainer">
+        <EntitySet Name="A" EntityType="TestService.A">
+          <NavigationPropertyBinding Path="b" Target="B"/>
+        </EntitySet>
+        <EntitySet Name="B" EntityType="TestService.B"/>
+      </EntityContainer>
+      <EntityType Name="A">
+        <Key>
+          <PropertyRef Name="ID"/>
+        </Key>
+        <Property Name="ID" Type="Edm.String" Nullable="false"/>
+        <Property Name="complex" Type="TestService.A_complex"/>
+        <Property Name="complexNotNull" Type="TestService.A_complexNotNull" Nullable="false"/>
+        <NavigationProperty Name="b" Type="Collection(TestService.B)"/>
+      </EntityType>
+      <EntityType Name="B">
+        <Key>
+          <PropertyRef Name="UID"/>
+        </Key>
+        <Property Name="UID" Type="Edm.String" Nullable="false"/>
+        <Property Name="a_ID" Type="Edm.String"/>
+        <Property Name="complex" Type="TestService.B_complex"/>
+      </EntityType>
+      <ComplexType Name="A_complex">
+        <Property Name="value1" Type="Edm.Int32"/>
+        <Property Name="value2" Type="Edm.Int32"/>
+        <Property Name="value3" Type="Edm.Int32" Nullable="false"/>
+        <Property Name="subcomplex" Type="TestService.A_complex_subcomplex"/>
+        <Property Name="subcomplexNotNull" Type="TestService.A_complex_subcomplexNotNull" Nullable="false"/>
+      </ComplexType>
+      <ComplexType Name="A_complex_subcomplex">
+        <Property Name="A" Type="Edm.String" Nullable="false"/>
+        <Property Name="B" Type="Edm.String" Nullable="false"/>
+        <Property Name="C" Type="Edm.Int32"/>
+      </ComplexType>
+      <ComplexType Name="A_complex_subcomplexNotNull">
+        <Property Name="A" Type="Edm.String" Nullable="false"/>
+        <Property Name="B" Type="Edm.String" Nullable="false"/>
+        <Property Name="C" Type="Edm.Int32"/>
+      </ComplexType>
+      <ComplexType Name="A_complexNotNull">
+        <Property Name="value1" Type="Edm.Int32"/>
+        <Property Name="value2" Type="Edm.Int32"/>
+        <Property Name="value3" Type="Edm.Int32" Nullable="false"/>
+        <Property Name="subcomplex" Type="TestService.A_complexNotNull_subcomplex"/>
+        <Property Name="subcomplexNotNull" Type="TestService.A_complexNotNull_subcomplexNotNull" Nullable="false"/>
+      </ComplexType>
+      <ComplexType Name="A_complexNotNull_subcomplex">
+        <Property Name="A" Type="Edm.String" Nullable="false"/>
+        <Property Name="B" Type="Edm.String" Nullable="false"/>
+        <Property Name="C" Type="Edm.Int32"/>
+      </ComplexType>
+      <ComplexType Name="A_complexNotNull_subcomplexNotNull">
+        <Property Name="A" Type="Edm.String" Nullable="false"/>
+        <Property Name="B" Type="Edm.String" Nullable="false"/>
+        <Property Name="C" Type="Edm.Int32"/>
+      </ComplexType>
+      <ComplexType Name="B_complex">
+        <Property Name="value1" Type="Edm.Boolean"/>
+        <Property Name="value2" Type="Edm.Boolean"/>
+      </ComplexType>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

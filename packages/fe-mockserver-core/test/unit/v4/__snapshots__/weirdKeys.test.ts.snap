@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Data Access with weird keys Item with slash keys 1`] = `
+{
+  "BoolKey": true,
+  "DateKey": "2022-02-04",
+  "GuidKey": "18589449-7082-4361-9d27-51363c2f3bdd",
+  "ID": "A/5",
+  "value": "SLASH",
+}
+`;
+
+exports[`Data Access with weird keys Item with various keys 1`] = `
+{
+  "BoolKey": true,
+  "DateKey": "2022-02-02",
+  "GuidKey": "18589449-7082-4361-9d27-51363c2f3bcd",
+  "ID": "A-0",
+  "value": "A",
+}
+`;
+
+exports[`Data Access with weird keys Item with various keys 2`] = `null`;

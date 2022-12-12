@@ -1,0 +1,1903 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Writeback capabilities can deal with Decimal 1`] = `
+{
+  "qualifier": "CustomerCreditExposureAmount",
+  "record": {
+    "propertyValues": [
+      {
+        "name": "CriticalityCalculation",
+        "value": {
+          "Record": {
+            "propertyValues": [
+              {
+                "name": "AcceptanceRangeHighValue",
+                "value": {
+                  "Path": "AcceptanceRangeHigh",
+                  "type": "Path",
+                },
+              },
+              {
+                "name": "AcceptanceRangeLowValue",
+                "value": {
+                  "Path": "AcceptanceRangeLow",
+                  "type": "Path",
+                },
+              },
+              {
+                "name": "DeviationRangeHighValue",
+                "value": {
+                  "Path": "DeviationRangeHigh",
+                  "type": "Path",
+                },
+              },
+              {
+                "name": "DeviationRangeLowValue",
+                "value": {
+                  "Path": "DeviationRangeLow",
+                  "type": "Path",
+                },
+              },
+              {
+                "name": "ImprovementDirection",
+                "value": {
+                  "EnumMember": "UI.ImprovementDirectionType/Maximize",
+                  "type": "EnumMember",
+                },
+              },
+              {
+                "name": "ToleranceRangeHighValue",
+                "value": {
+                  "Path": "ToleranceRangeHigh",
+                  "type": "Path",
+                },
+              },
+              {
+                "name": "ToleranceRangeLowValue",
+                "value": {
+                  "Path": "ToleranceRangeLow",
+                  "type": "Path",
+                },
+              },
+            ],
+            "type": "com.sap.vocabularies.UI.v1.CriticalityCalculationType",
+          },
+          "type": "Record",
+        },
+      },
+      {
+        "name": "Description",
+        "value": {
+          "String": "Bullet Micro Chart",
+          "type": "String",
+        },
+      },
+      {
+        "name": "ForecastValue",
+        "value": {
+          "Path": "CustomerCreditForecast",
+          "type": "Path",
+        },
+      },
+      {
+        "name": "MaximumValue",
+        "value": {
+          "Decimal": 7000,
+          "type": "Decimal",
+        },
+      },
+      {
+        "name": "MinimumValue",
+        "value": {
+          "Decimal": 200.02,
+          "type": "Decimal",
+        },
+      },
+      {
+        "name": "TargetValue",
+        "value": {
+          "Path": "CustomerCreditLimitAmount",
+          "type": "Path",
+        },
+      },
+      {
+        "name": "Title",
+        "value": {
+          "String": "Exposure Amount",
+          "type": "String",
+        },
+      },
+      {
+        "name": "Value",
+        "value": {
+          "Path": "CustomerCreditExposureAmount",
+          "type": "Path",
+        },
+      },
+    ],
+    "type": "com.sap.vocabularies.UI.v1.DataPointType",
+  },
+  "term": "com.sap.vocabularies.UI.v1.DataPoint",
+}
+`;
+
+exports[`Writeback capabilities can deal with Integer and Decimal "naturally" 1`] = `
+{
+  "qualifier": "Progress2",
+  "record": {
+    "propertyValues": [
+      {
+        "name": "TargetValue",
+        "value": {
+          "Int": 100,
+          "type": "Int",
+        },
+      },
+      {
+        "name": "Title",
+        "value": {
+          "String": "Progress",
+          "type": "String",
+        },
+      },
+      {
+        "name": "Value",
+        "value": {
+          "Path": "Progress",
+          "type": "Path",
+        },
+      },
+      {
+        "name": "Visualization",
+        "value": {
+          "EnumMember": "UI.VisualizationType/Progress",
+          "type": "EnumMember",
+        },
+      },
+    ],
+    "type": "com.sap.vocabularies.UI.v1.DataPointType",
+  },
+  "term": "com.sap.vocabularies.UI.v1.DataPoint",
+}
+`;
+
+exports[`Writeback capabilities can deal with Integer and Decimal "naturally" 2`] = `
+{
+  "qualifier": "Progress2",
+  "record": {
+    "propertyValues": [
+      {
+        "name": "TargetValue",
+        "value": {
+          "Decimal": 99.5,
+          "type": "Decimal",
+        },
+      },
+      {
+        "name": "Title",
+        "value": {
+          "String": "Progress",
+          "type": "String",
+        },
+      },
+      {
+        "name": "Value",
+        "value": {
+          "Path": "Progress",
+          "type": "Path",
+        },
+      },
+      {
+        "name": "Visualization",
+        "value": {
+          "EnumMember": "UI.VisualizationType/Progress",
+          "type": "EnumMember",
+        },
+      },
+    ],
+    "type": "com.sap.vocabularies.UI.v1.DataPointType",
+  },
+  "term": "com.sap.vocabularies.UI.v1.DataPoint",
+}
+`;
+
+exports[`Writeback capabilities can deal with Null 1`] = `
+{
+  "qualifier": undefined,
+  "term": "Org.OData.Core.V1.OperationAvailable",
+  "value": {
+    "type": "Null",
+  },
+}
+`;
+
+exports[`Writeback capabilities can deal with annotation on collection 1`] = `
+{
+  "collection": [
+    {
+      "annotations": [
+        {
+          "qualifier": undefined,
+          "term": "com.sap.vocabularies.UI.v1.Importance",
+          "value": {
+            "EnumMember": "UI.ImportanceType/High",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "propertyValues": [
+        {
+          "name": "ID",
+          "value": {
+            "String": "GeneralInfo",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Label",
+          "value": {
+            "String": "General Information",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Facets",
+          "value": {
+            "Collection": [
+              {
+                "annotations": [
+                  {
+                    "qualifier": undefined,
+                    "term": "com.sap.vocabularies.UI.v1.Importance",
+                    "value": {
+                      "EnumMember": "UI.ImportanceType/High",
+                      "type": "EnumMember",
+                    },
+                  },
+                  {
+                    "qualifier": undefined,
+                    "term": "com.sap.vocabularies.UI.v1.Hidden",
+                    "value": {
+                      "Bool": false,
+                      "type": "Bool",
+                    },
+                  },
+                ],
+                "propertyValues": [
+                  {
+                    "name": "Label",
+                    "value": {
+                      "String": "Adress",
+                      "type": "String",
+                    },
+                  },
+                  {
+                    "name": "ID",
+                    "value": {
+                      "String": "Adress",
+                      "type": "String",
+                    },
+                  },
+                  {
+                    "name": "Target",
+                    "value": {
+                      "AnnotationPath": "@UI.FieldGroup#SoldToQuickView",
+                      "type": "AnnotationPath",
+                    },
+                  },
+                ],
+                "type": "com.sap.vocabularies.UI.v1.ReferenceFacet",
+              },
+              {
+                "annotations": [
+                  {
+                    "qualifier": undefined,
+                    "term": "com.sap.vocabularies.UI.v1.Importance",
+                    "value": {
+                      "EnumMember": "UI.ImportanceType/High",
+                      "type": "EnumMember",
+                    },
+                  },
+                  {
+                    "qualifier": undefined,
+                    "term": "com.sap.vocabularies.UI.v1.Hidden",
+                    "value": {
+                      "Bool": false,
+                      "type": "Bool",
+                    },
+                  },
+                ],
+                "propertyValues": [
+                  {
+                    "name": "Label",
+                    "value": {
+                      "String": "Contact",
+                      "type": "String",
+                    },
+                  },
+                  {
+                    "name": "ID",
+                    "value": {
+                      "String": "Partner",
+                      "type": "String",
+                    },
+                  },
+                  {
+                    "name": "Target",
+                    "value": {
+                      "AnnotationPath": "@UI.FieldGroup#Contact",
+                      "type": "AnnotationPath",
+                    },
+                  },
+                ],
+                "type": "com.sap.vocabularies.UI.v1.ReferenceFacet",
+              },
+            ],
+            "type": "Collection",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.CollectionFacet",
+    },
+  ],
+  "qualifier": undefined,
+  "term": undefined,
+}
+`;
+
+exports[`Writeback capabilities can deal with weird things such as annotation on collection 1`] = `
+{
+  "annotations": [
+    {
+      "qualifier": undefined,
+      "term": "com.sap.vocabularies.UI.v1.Importance",
+      "value": {
+        "EnumMember": "UI.ImportanceType/High",
+        "type": "EnumMember",
+      },
+    },
+  ],
+  "collection": [
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Dummy Action",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "com.c_salesordermanage_sd.ChangeOrderStatus",
+            "type": "String",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Target",
+          "value": {
+            "AnnotationPath": "@UI.FieldGroup#multipleActionFields",
+            "type": "AnnotationPath",
+          },
+        },
+        {
+          "name": "Label",
+          "value": {
+            "String": "Rating",
+            "type": "String",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAnnotation",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "SemanticObject",
+          "value": {
+            "String": "SalesOrder",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "manageInline",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Label",
+          "value": {
+            "String": "IBN",
+            "type": "String",
+          },
+        },
+        {
+          "name": "RequiresContext",
+          "value": {
+            "Bool": false,
+            "type": "Bool",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForIntentBasedNavigation",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Target",
+          "value": {
+            "AnnotationPath": "@Communication.Contact",
+            "type": "AnnotationPath",
+          },
+        },
+        {
+          "name": "Label",
+          "value": {
+            "String": "Supplier",
+            "type": "String",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAnnotation",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Value",
+          "value": {
+            "Path": "PartnerFunction",
+            "type": "Path",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataField",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Value",
+          "value": {
+            "Path": "BusinessPartner",
+            "type": "Path",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataField",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Value",
+          "value": {
+            "Path": "FullName",
+            "type": "Path",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataField",
+    },
+    {
+      "annotations": [
+        {
+          "qualifier": "Alternative",
+          "term": "com.sap.vocabularies.UI.v1.Importance",
+          "value": {
+            "EnumMember": "UI.ImportanceType/Low",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "propertyValues": [
+        {
+          "name": "Value",
+          "value": {
+            "Path": "isVerified",
+            "type": "Path",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataField",
+    },
+  ],
+  "qualifier": undefined,
+  "term": "com.sap.vocabularies.UI.v1.LineItem",
+}
+`;
+
+exports[`Writeback capabilities can revert a Line Item definition 1`] = `
+{
+  "collection": [
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Identifier",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Value",
+          "value": {
+            "Path": "ID",
+            "type": "Path",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataField",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Value",
+          "value": {
+            "Path": "name",
+            "type": "Path",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataField",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Value",
+          "value": {
+            "Path": "imageURL",
+            "type": "Path",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataField",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Value",
+          "value": {
+            "Path": "imageURLStream",
+            "type": "Path",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataField",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Value",
+          "value": {
+            "Path": "imageStream",
+            "type": "Path",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataField",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Value",
+          "value": {
+            "Path": "preferredItem",
+            "type": "Path",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataField",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Value",
+          "value": {
+            "Path": "createdAt",
+            "type": "Path",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataField",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Target",
+          "value": {
+            "AnnotationPath": "@UI.DataPoint#withValueFormat",
+            "type": "AnnotationPath",
+          },
+        },
+        {
+          "name": "Label",
+          "value": {
+            "String": "Usage Progress (Decimal)",
+            "type": "String",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAnnotation",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Value",
+          "value": {
+            "Path": "usageStartTime",
+            "type": "Path",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataField",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Value",
+          "value": {
+            "Path": "usageCoefficient",
+            "type": "Path",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataField",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Value",
+          "value": {
+            "Path": "usageCounter",
+            "type": "Path",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataField",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Value",
+          "value": {
+            "Path": "calculatedValue",
+            "type": "Path",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataField",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Value",
+          "value": {
+            "Path": "updatedValue",
+            "type": "Path",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataField",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Hidden & ReadOnly (_it)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testHiddenReadOnly",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Hidden & ReadOnly (_myBindingParameter)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testHiddenReadOnly2",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Hidden & ReadOnly (no path)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testHiddenReadOnlyNoPath",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "SemanticObject",
+          "value": {
+            "String": "v4Freestyle",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "Inbound",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Label",
+          "value": {
+            "String": "IBN_With_Context",
+            "type": "String",
+          },
+        },
+        {
+          "name": "RequiresContext",
+          "value": {
+            "Bool": false,
+            "type": "Bool",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForIntentBasedNavigation",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "SemanticObject",
+          "value": {
+            "String": "Incorrect_SemanticObject",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "manageInline",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Label",
+          "value": {
+            "String": "IBN_With_Incorrect_SemanticObject",
+            "type": "String",
+          },
+        },
+        {
+          "name": "RequiresContext",
+          "value": {
+            "Bool": false,
+            "type": "Bool",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForIntentBasedNavigation",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "SemanticObject",
+          "value": {
+            "String": "SalesOrder",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "Incorrect_Action",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Label",
+          "value": {
+            "String": "IBN_With_Incorrect_Action",
+            "type": "String",
+          },
+        },
+        {
+          "name": "RequiresContext",
+          "value": {
+            "Bool": false,
+            "type": "Bool",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForIntentBasedNavigation",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Text Arrangement",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testTextArrangement",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Parameter Default Value",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testParameterDefaultValue",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Miscellaneous",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testMiscellaneous",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Unbound action",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.EntityContainer/testUnbound",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Operation Available (bound/true)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testOABoundTrue",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Operation Available (bound/false)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testOABoundFalse",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Operation Available (bound/_it.preferredItem)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testOABoundDynamic",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Operation Available 2 (bound/_it.preferredItem)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testOABoundDynamic2",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Operation Available Switch 1 (bound/_it.booleanSwitch1Available)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testSwitch1",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Operation Available Switch 2 (bound/_it.booleanSwitch2Available)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testSwitch2",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Operation Available (unbound/true)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.EntityContainer/testOAUnboundTrue",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Operation Available (unbound/false)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.EntityContainer/testOAUnboundFalse",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "(Bound) Type Ahead (ValueList/@UI.Importance)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testBoundTypeAheadValueList",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "(Bound) Type Ahead (ValueListMapping/@UI.Importance)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testBoundTypeAheadValueListMapping",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "(Unbound) Type Ahead (ValueList/@UI.Importance #High)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.EntityContainer/testUnboundTypeAheadValueList",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "(Unbound) Type Ahead (ValueListMappping/@UI.Importance #High)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.EntityContainer/testUnboundTypeAheadValueListMapping",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "SideEffects (No alias)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.sideEffectsNoAlias",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "SideEffects (With alias)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.sideEffectsWithAlias",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Inline",
+          "value": {
+            "Bool": true,
+            "type": "Bool",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Messages",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testMessages",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Operation Available",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Target",
+          "value": {
+            "AnnotationPath": "@UI.FieldGroup#InlineOABoundTrue",
+            "type": "AnnotationPath",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAnnotation",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Operation Available",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Target",
+          "value": {
+            "AnnotationPath": "@UI.FieldGroup#InlineOABoundFalse",
+            "type": "AnnotationPath",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAnnotation",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Operation Available (FieldGroup)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Target",
+          "value": {
+            "AnnotationPath": "@UI.FieldGroup#InlineOAUnboundFalse",
+            "type": "AnnotationPath",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAnnotation",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Operation Available",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Target",
+          "value": {
+            "AnnotationPath": "@UI.FieldGroup#InlineOABoundDynamic",
+            "type": "AnnotationPath",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAnnotation",
+    },
+    {
+      "annotations": [
+        {
+          "qualifier": undefined,
+          "term": "com.sap.vocabularies.UI.v1.Importance",
+          "value": {
+            "EnumMember": "UI.ImportanceType/None",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Operation Available",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Target",
+          "value": {
+            "AnnotationPath": "@UI.FieldGroup#InlineOAUnboundTrue",
+            "type": "AnnotationPath",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAnnotation",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Bound Inline (NoFieldGroup)",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Inline",
+          "value": {
+            "Bool": true,
+            "type": "Bool",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testBoundNoFieldGroup",
+            "type": "String",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "InvocationGrouping: ChangeSet",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testInvocationGroupingChangeSet",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "InvocationGrouping: Isolated",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testInvocationGroupingIsolated",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/Isolated",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+    {
+      "propertyValues": [
+        {
+          "name": "Label",
+          "value": {
+            "String": "Reset UpdatedByActions",
+            "type": "String",
+          },
+        },
+        {
+          "name": "Action",
+          "value": {
+            "String": "sap.fe.manageitems.TechnicalTestingService.testResetUpdatedByActions",
+            "type": "String",
+          },
+        },
+        {
+          "name": "InvocationGrouping",
+          "value": {
+            "EnumMember": "UI.OperationGroupingType/ChangeSet",
+            "type": "EnumMember",
+          },
+        },
+      ],
+      "type": "com.sap.vocabularies.UI.v1.DataFieldForAction",
+    },
+  ],
+  "qualifier": undefined,
+  "term": "com.sap.vocabularies.UI.v1.LineItem",
+}
+`;
+
+exports[`Writeback capabilities can revert a Navigation Restriction 1`] = `
+{
+  "qualifier": undefined,
+  "record": {
+    "propertyValues": [
+      {
+        "name": "RestrictedProperties",
+        "value": {
+          "Collection": [
+            {
+              "propertyValues": [
+                {
+                  "name": "NavigationProperty",
+                  "value": {
+                    "NavigationPropertyPath": "_Item",
+                    "type": "NavigationPropertyPath",
+                  },
+                },
+                {
+                  "name": "InsertRestrictions",
+                  "value": {
+                    "Record": {
+                      "propertyValues": [
+                        {
+                          "name": "Insertable",
+                          "value": {
+                            "Bool": true,
+                            "type": "Bool",
+                          },
+                        },
+                      ],
+                      "type": "Org.OData.Capabilities.V1.InsertRestrictionsType",
+                    },
+                    "type": "Record",
+                  },
+                },
+              ],
+              "type": "Org.OData.Capabilities.V1.NavigationPropertyRestriction",
+            },
+          ],
+          "type": "Collection",
+        },
+      },
+    ],
+    "type": "Org.OData.Capabilities.V1.NavigationRestrictionsType",
+  },
+  "term": "Org.OData.Capabilities.V1.NavigationRestrictions",
+}
+`;
+
+exports[`Writeback capabilities can revert a SelectionFields definition 1`] = `
+{
+  "collection": [
+    {
+      "PropertyPath": "name",
+      "type": "PropertyPath",
+    },
+    {
+      "PropertyPath": "usageCounter",
+      "type": "PropertyPath",
+    },
+    {
+      "PropertyPath": "preferredItem",
+      "type": "PropertyPath",
+    },
+  ],
+  "qualifier": undefined,
+  "term": "com.sap.vocabularies.UI.v1.SelectionFields",
+}
+`;
+
+exports[`Writeback capabilities can revert a SelectionPresentationVariant 1`] = `
+{
+  "qualifier": "SPVPath",
+  "record": {
+    "propertyValues": [
+      {
+        "name": "PresentationVariant",
+        "value": {
+          "Record": {
+            "propertyValues": [
+              {
+                "name": "SortOrder",
+                "value": {
+                  "Collection": [
+                    {
+                      "propertyValues": [
+                        {
+                          "name": "Property",
+                          "value": {
+                            "PropertyPath": "ID",
+                            "type": "PropertyPath",
+                          },
+                        },
+                      ],
+                      "type": "com.sap.vocabularies.Common.v1.SortOrderType",
+                    },
+                  ],
+                  "type": "Collection",
+                },
+              },
+              {
+                "name": "Visualizations",
+                "value": {
+                  "Collection": [
+                    {
+                      "AnnotationPath": "@UI.LineItem#SPVPath",
+                      "type": "AnnotationPath",
+                    },
+                  ],
+                  "type": "Collection",
+                },
+              },
+            ],
+            "type": "com.sap.vocabularies.UI.v1.PresentationVariantType",
+          },
+          "type": "Record",
+        },
+      },
+      {
+        "name": "SelectionVariant",
+        "value": {
+          "Record": {
+            "propertyValues": [
+              {
+                "name": "SelectOptions",
+                "value": {
+                  "Collection": [
+                    {
+                      "propertyValues": [
+                        {
+                          "name": "PropertyName",
+                          "value": {
+                            "PropertyPath": "OverallSDProcessStatus",
+                            "type": "PropertyPath",
+                          },
+                        },
+                        {
+                          "name": "Ranges",
+                          "value": {
+                            "Collection": [
+                              {
+                                "propertyValues": [
+                                  {
+                                    "name": "Option",
+                                    "value": {
+                                      "EnumMember": "UI.SelectionRangeOptionType/EQ",
+                                      "type": "EnumMember",
+                                    },
+                                  },
+                                  {
+                                    "name": "Low",
+                                    "value": {
+                                      "String": "A",
+                                      "type": "String",
+                                    },
+                                  },
+                                ],
+                                "type": "com.sap.vocabularies.UI.v1.SelectionRangeType",
+                              },
+                            ],
+                            "type": "Collection",
+                          },
+                        },
+                      ],
+                      "type": "com.sap.vocabularies.UI.v1.SelectOptionType",
+                    },
+                  ],
+                  "type": "Collection",
+                },
+              },
+              {
+                "name": "Text",
+                "value": {
+                  "String": "Open",
+                  "type": "String",
+                },
+              },
+            ],
+            "type": "com.sap.vocabularies.UI.v1.SelectionVariantType",
+          },
+          "type": "Record",
+        },
+      },
+      {
+        "name": "Text",
+        "value": {
+          "String": "Open",
+          "type": "String",
+        },
+      },
+    ],
+    "type": "com.sap.vocabularies.UI.v1.SelectionPresentationVariantType",
+  },
+  "term": "com.sap.vocabularies.UI.v1.SelectionPresentationVariant",
+}
+`;
+
+exports[`Writeback capabilities can revert a SideEffects definition 1`] = `
+{
+  "qualifier": "ShipToPartyChange",
+  "record": {
+    "propertyValues": [
+      {
+        "name": "SourceProperties",
+        "value": {
+          "Collection": [
+            {
+              "PropertyPath": "_ShipToParty/BusinessPartner",
+              "type": "PropertyPath",
+            },
+          ],
+          "type": "Collection",
+        },
+      },
+      {
+        "name": "TargetEntities",
+        "value": {
+          "Collection": [
+            {
+              "NavigationPropertyPath": "_ShipToParty",
+              "type": "NavigationPropertyPath",
+            },
+            {
+              "NavigationPropertyPath": "_Partner",
+              "type": "NavigationPropertyPath",
+            },
+          ],
+          "type": "Collection",
+        },
+      },
+    ],
+    "type": "com.sap.vocabularies.Common.v1.SideEffectsType",
+  },
+  "term": "com.sap.vocabularies.Common.v1.SideEffects",
+}
+`;
+
+exports[`Writeback capabilities can revert a Value Help definition 1`] = `
+{
+  "qualifier": undefined,
+  "record": {
+    "propertyValues": [
+      {
+        "name": "Label",
+        "value": {
+          "String": "ValueHelp for Boolean",
+          "type": "String",
+        },
+      },
+      {
+        "name": "CollectionPath",
+        "value": {
+          "String": "EntityT6",
+          "type": "String",
+        },
+      },
+      {
+        "name": "Parameters",
+        "value": {
+          "Collection": [
+            {
+              "propertyValues": [
+                {
+                  "name": "LocalDataProperty",
+                  "value": {
+                    "PropertyPath": "booleanWithValueHelp",
+                    "type": "PropertyPath",
+                  },
+                },
+                {
+                  "name": "ValueListProperty",
+                  "value": {
+                    "String": "value",
+                    "type": "String",
+                  },
+                },
+              ],
+              "type": "com.sap.vocabularies.Common.v1.ValueListParameterInOut",
+            },
+          ],
+          "type": "Collection",
+        },
+      },
+    ],
+    "type": "com.sap.vocabularies.Common.v1.ValueListType",
+  },
+  "term": "com.sap.vocabularies.Common.v1.ValueList",
+}
+`;
+
+exports[`Writeback capabilities can revert further SideEffects definition 1`] = `
+{
+  "qualifier": "MaterialDetailsModelYearChange",
+  "record": {
+    "propertyValues": [
+      {
+        "name": "SourceProperties",
+        "value": {
+          "Collection": [
+            {
+              "PropertyPath": "ModelYear",
+              "type": "PropertyPath",
+            },
+          ],
+          "type": "Collection",
+        },
+      },
+      {
+        "name": "TargetProperties",
+        "value": {
+          "Collection": [
+            "WarrantyYear",
+          ],
+          "type": "Collection",
+        },
+      },
+    ],
+    "type": "com.sap.vocabularies.Common.v1.SideEffectsType",
+  },
+  "term": "com.sap.vocabularies.Common.v1.SideEffects",
+}
+`;

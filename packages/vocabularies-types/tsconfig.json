@@ -1,0 +1,11 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": ".",
+        "declarationMap": false,
+        "types": ["node"],
+        "isolatedModules": true,
+        "sourceMap": false
+    },
+    "include": ["src/**/*.ts"]
+}

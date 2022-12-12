@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Batch Parser can parse correct batch content 1`] = `
+Batch {
+  "boundary": "boundary111",
+  "isChangeSet": false,
+  "parts": [
+    {
+      "body": undefined,
+      "headers": {
+        "accept": "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+        "accept-language": "en",
+        "content-type": "application/json;charset=UTF-8;IEEE754Compatible=true",
+      },
+      "method": "GET",
+      "url": "/YOLO",
+    },
+  ],
+}
+`;
+
+exports[`Batch Parser can parse correct batch content with changeset 1`] = `
+Batch {
+  "boundary": "batch_id-1653467757956-971",
+  "isChangeSet": false,
+  "parts": [
+    Batch {
+      "boundary": "changeset_id-1653467757956-972",
+      "changeSetErrorResponse": null,
+      "isChangeSet": true,
+      "parts": [
+        {
+          "body": {
+            "myParameter": "23",
+          },
+          "contentId": "0.0",
+          "headers": {
+            "accept": "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+            "accept-language": "en",
+            "content-type": "application/json;charset=UTF-8;IEEE754Compatible=true",
+            "if-match": "W/"2022-05-25T07:18:11.527Z"",
+          },
+          "method": "POST",
+          "url": "/LineItems(ID=1,IsActiveEntity=true)/sap.fe.manageitems.TechnicalTestingService.testInvocationGroupingChangeSet",
+        },
+        {
+          "body": {
+            "myParameter": "23",
+          },
+          "contentId": "1.0",
+          "headers": {
+            "accept": "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+            "accept-language": "en",
+            "content-type": "application/json;charset=UTF-8;IEEE754Compatible=true",
+            "if-match": "W/"2022-05-25T07:18:11.527Z"",
+          },
+          "method": "POST",
+          "url": "/LineItems(ID=2,IsActiveEntity=true)/sap.fe.manageitems.TechnicalTestingService.testInvocationGroupingChangeSet",
+        },
+        {
+          "body": {
+            "myParameter": "23",
+          },
+          "contentId": "2.0",
+          "headers": {
+            "accept": "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+            "accept-language": "en",
+            "content-type": "application/json;charset=UTF-8;IEEE754Compatible=true",
+            "if-match": "W/"2022-05-25T07:18:11.527Z"",
+          },
+          "method": "POST",
+          "url": "/LineItems(ID=3,IsActiveEntity=true)/sap.fe.manageitems.TechnicalTestingService.testInvocationGroupingChangeSet",
+        },
+      ],
+    },
+    {
+      "body": "",
+      "headers": {
+        "accept": "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+        "accept-language": "en",
+        "content-type": "application/json;charset=UTF-8;IEEE754Compatible=true",
+      },
+      "method": "GET",
+      "url": "/LineItems?$select=ID,IsActiveEntity,updatedValue&$filter=ID%20eq%201%20and%20IsActiveEntity%20eq%20true",
+    },
+    {
+      "body": "",
+      "headers": {
+        "accept": "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+        "accept-language": "en",
+        "content-type": "application/json;charset=UTF-8;IEEE754Compatible=true",
+      },
+      "method": "GET",
+      "url": "/LineItems?$select=ID,IsActiveEntity,updatedValue&$filter=ID%20eq%202%20and%20IsActiveEntity%20eq%20true",
+    },
+    {
+      "body": "",
+      "headers": {
+        "accept": "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+        "accept-language": "en",
+        "content-type": "application/json;charset=UTF-8;IEEE754Compatible=true",
+      },
+      "method": "GET",
+      "url": "/LineItems?$select=ID,IsActiveEntity,updatedValue&$filter=ID%20eq%203%20and%20IsActiveEntity%20eq%20true",
+    },
+  ],
+}
+`;
+
+exports[`Batch Parser can parse correct batch content with search & search-focus 1`] = `
+Batch {
+  "boundary": "boundary111",
+  "isChangeSet": false,
+  "parts": [
+    {
+      "body": undefined,
+      "headers": {
+        "accept": "application/json",
+        "accept-language": "en",
+        "sap-cancel-on-close": "true",
+        "sap-contextid-accept": "header",
+      },
+      "method": "GET",
+      "url": "/YOLO?$skip=0&$top=10&search=foo&search-focus=bar",
+    },
+  ],
+}
+`;
+
+exports[`Batch Parser will fail on incorrect batch parse correct batch content - incorrect batch  1`] = `[Error: Invalid header "content-type" in batch part]`;
+
+exports[`Batch Parser will fail on incorrect batch parse correct batch content - incorrect batch boundary  1`] = `[Error: Invalid boundary while parsing batch request]`;
+
+exports[`Batch Parser will fail on incorrect batch parse correct batch content - missing content type 1`] = `[Error: Missing header "content-type" in batch part]`;

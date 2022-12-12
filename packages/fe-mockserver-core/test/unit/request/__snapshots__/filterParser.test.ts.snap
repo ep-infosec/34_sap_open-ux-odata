@@ -1,0 +1,474 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter Parser can deal with empty values 1`] = `
+{
+  "expressions": [
+    {
+      "identifier": "Customer",
+      "literal": "'1'",
+      "operator": "eq",
+    },
+    {
+      "identifier": "CompanyCode",
+      "literal": "'0001'",
+      "operator": "eq",
+    },
+    {
+      "identifier": "Currency",
+      "literal": "'EUR'",
+      "operator": "eq",
+    },
+    {
+      "identifier": "SalesOrganization",
+      "literal": "'1010'",
+      "operator": "eq",
+    },
+    {
+      "identifier": "DistributionChannel",
+      "literal": "'01'",
+      "operator": "eq",
+    },
+    {
+      "identifier": "Division",
+      "literal": "'01'",
+      "operator": "eq",
+    },
+    {
+      "identifier": "PartnerCounter",
+      "literal": "''",
+      "operator": "eq",
+    },
+    {
+      "identifier": "IBAN",
+      "literal": "''",
+      "operator": "eq",
+    },
+    {
+      "identifier": "CardNumber",
+      "literal": "'2922870'",
+      "operator": "eq",
+    },
+    {
+      "identifier": "PaymentCardType",
+      "literal": "''",
+      "operator": "eq",
+    },
+  ],
+  "operator": "AND",
+}
+`;
+
+exports[`Filter Parser can deal with nested function calls 1`] = `
+{
+  "expressions": [
+    {
+      "identifier": {
+        "method": "contains",
+        "methodArgs": [
+          {
+            "method": "trim",
+            "methodArgs": [
+              {
+                "method": "tolower",
+                "methodArgs": [
+                  "Description",
+                ],
+                "type": "method",
+              },
+            ],
+            "type": "method",
+          },
+          "'port'",
+        ],
+        "type": "method",
+      },
+    },
+  ],
+}
+`;
+
+exports[`Filter Parser can deal with nested function calls 2`] = `
+{
+  "expressions": [
+    {
+      "identifier": {
+        "method": "contains",
+        "methodArgs": [
+          {
+            "method": "trim",
+            "methodArgs": [
+              {
+                "method": "tolower",
+                "methodArgs": [
+                  "Description",
+                ],
+                "type": "method",
+              },
+            ],
+            "type": "method",
+          },
+          {
+            "method": "tolower",
+            "methodArgs": [
+              "'Port'",
+            ],
+            "type": "method",
+          },
+        ],
+        "type": "method",
+      },
+    },
+  ],
+}
+`;
+
+exports[`Filter Parser can deal with nested function calls 3`] = `
+{
+  "expressions": [
+    {
+      "identifier": {
+        "method": "contains",
+        "methodArgs": [
+          {
+            "method": "trim",
+            "methodArgs": [
+              {
+                "method": "tolower",
+                "methodArgs": [
+                  {
+                    "method": "cast",
+                    "methodArgs": [
+                      "Description",
+                      "Edm.String",
+                    ],
+                    "type": "method",
+                  },
+                ],
+                "type": "method",
+              },
+            ],
+            "type": "method",
+          },
+          "'port'",
+        ],
+        "type": "method",
+      },
+    },
+  ],
+}
+`;
+
+exports[`Filter Parser it can deal with v2 specific guid 1`] = `
+{
+  "expressions": [
+    {
+      "identifier": "ProdCmplncSrvcReqFailureUUID",
+      "literal": "guid%2700000000-0000-0000-0002-000000000000%27",
+      "operator": "eq",
+    },
+  ],
+}
+`;
+
+exports[`Filter Parser v2 alternative filter 1`] = `
+{
+  "expressions": [
+    {
+      "expressions": [
+        {
+          "identifier": "Product",
+          "literal": "'1234'",
+          "operator": "eq",
+        },
+        {
+          "identifier": "SalesOrganization",
+          "literal": "'0DE1'",
+          "operator": "eq",
+        },
+      ],
+      "isGroup": true,
+      "operator": "AND",
+    },
+    {
+      "identifier": "ValidFrom",
+      "literal": "datetime'2022-10-07T06:52:24.189'",
+      "operator": "le",
+    },
+    {
+      "identifier": "ValidTo",
+      "literal": "datetime'2022-10-07T06:52:24.189'",
+      "operator": "ge",
+    },
+  ],
+  "operator": "AND",
+}
+`;
+
+exports[`Filter Parser v2 complex filter 1`] = `
+{
+  "expressions": [
+    {
+      "identifier": "AdvncdPlngDisplayHorizonDte",
+      "literal": "datetime'2021-01-01T00:00:00'",
+      "operator": "ge",
+    },
+    {
+      "identifier": "AdvncdPlngDisplayHorizonDte",
+      "literal": "datetime'2021-12-31T00:00:00'",
+      "operator": "le",
+    },
+  ],
+  "isGroup": true,
+  "operator": "AND",
+}
+`;
+
+exports[`Filter Parser v2 complex filter 2`] = `
+{
+  "expressions": [
+    {
+      "identifier": "AdvncdPlngResourceName",
+      "literal": "'AdvncdPlngResourceName 1'",
+      "operator": "eq",
+    },
+    {
+      "identifier": "AdvncdPlngResourceName",
+      "literal": "'AdvncdPlngResourceName 10'",
+      "operator": "eq",
+    },
+    {
+      "identifier": "AdvncdPlngResourceName",
+      "literal": "'AdvncdPlngResourceName 2'",
+      "operator": "eq",
+    },
+    {
+      "identifier": "AdvncdPlngResourceName",
+      "literal": "'AdvncdPlngResourceName 3'",
+      "operator": "eq",
+    },
+    {
+      "identifier": "AdvncdPlngResourceName",
+      "literal": "'AdvncdPlngResourceName 4'",
+      "operator": "eq",
+    },
+    {
+      "identifier": "AdvncdPlngResourceName",
+      "literal": "'AdvncdPlngResourceName 5'",
+      "operator": "eq",
+    },
+    {
+      "identifier": "AdvncdPlngResourceName",
+      "literal": "'AdvncdPlngResourceName 6'",
+      "operator": "eq",
+    },
+    {
+      "identifier": "AdvncdPlngResourceName",
+      "literal": "'AdvncdPlngResourceName 7'",
+      "operator": "eq",
+    },
+    {
+      "identifier": "AdvncdPlngResourceName",
+      "literal": "'AdvncdPlngResourceName 8'",
+      "operator": "eq",
+    },
+    {
+      "identifier": "AdvncdPlngResourceName",
+      "literal": "'AdvncdPlngResourceName 9'",
+      "operator": "eq",
+    },
+  ],
+  "isGroup": true,
+  "operator": "OR",
+}
+`;
+
+exports[`Filter Parser v2 complex filter 3`] = `
+{
+  "expressions": [
+    {
+      "identifier": "SimulationSessionUUID",
+      "literal": "guid'd535d9a2-fdea-4e1e-84e6-2c135fcbcd08'",
+      "operator": "eq",
+    },
+  ],
+}
+`;
+
+exports[`Filter Parser v2 complex filter 4`] = `
+{
+  "expressions": [
+    {
+      "expressions": [
+        {
+          "expressions": [
+            {
+              "identifier": "AdvncdPlngDisplayHorizonDte",
+              "literal": "datetime'2021-01-01T00:00:00'",
+              "operator": "ge",
+            },
+            {
+              "identifier": "AdvncdPlngDisplayHorizonDte",
+              "literal": "datetime'2021-12-31T00:00:00'",
+              "operator": "le",
+            },
+          ],
+          "isGroup": true,
+          "operator": "AND",
+        },
+        {
+          "expressions": [
+            {
+              "identifier": "AdvncdPlngResourceName",
+              "literal": "'AdvncdPlngResourceName 1'",
+              "operator": "eq",
+            },
+            {
+              "identifier": "AdvncdPlngResourceName",
+              "literal": "'AdvncdPlngResourceName 10'",
+              "operator": "eq",
+            },
+            {
+              "identifier": "AdvncdPlngResourceName",
+              "literal": "'AdvncdPlngResourceName 2'",
+              "operator": "eq",
+            },
+            {
+              "identifier": "AdvncdPlngResourceName",
+              "literal": "'AdvncdPlngResourceName 3'",
+              "operator": "eq",
+            },
+            {
+              "identifier": "AdvncdPlngResourceName",
+              "literal": "'AdvncdPlngResourceName 4'",
+              "operator": "eq",
+            },
+            {
+              "identifier": "AdvncdPlngResourceName",
+              "literal": "'AdvncdPlngResourceName 5'",
+              "operator": "eq",
+            },
+            {
+              "identifier": "AdvncdPlngResourceName",
+              "literal": "'AdvncdPlngResourceName 6'",
+              "operator": "eq",
+            },
+            {
+              "identifier": "AdvncdPlngResourceName",
+              "literal": "'AdvncdPlngResourceName 7'",
+              "operator": "eq",
+            },
+            {
+              "identifier": "AdvncdPlngResourceName",
+              "literal": "'AdvncdPlngResourceName 8'",
+              "operator": "eq",
+            },
+            {
+              "identifier": "AdvncdPlngResourceName",
+              "literal": "'AdvncdPlngResourceName 9'",
+              "operator": "eq",
+            },
+          ],
+          "isGroup": true,
+          "operator": "OR",
+        },
+        {
+          "identifier": "PlanningVersionExternal",
+          "literal": "'000'",
+          "operator": "eq",
+        },
+      ],
+      "isGroup": true,
+      "operator": "AND",
+    },
+    {
+      "identifier": "SimulationSessionUUID",
+      "literal": "guid'd535d9a2-fdea-4e1e-84e6-2c135fcbcd08'",
+      "operator": "eq",
+    },
+  ],
+  "operator": "AND",
+}
+`;
+
+exports[`Filter Parser v4 complex filter 1`] = `
+{
+  "expressions": [
+    {
+      "expressions": [
+        {
+          "identifier": {
+            "expression": {
+              "expressions": [
+                {
+                  "identifier": {
+                    "expression": {
+                      "expressions": [
+                        {
+                          "identifier": "a0/SitnInstceAttribName",
+                          "literal": "'CAMASSRUNDATE'",
+                          "operator": "eq",
+                        },
+                        {
+                          "identifier": {
+                            "expression": {
+                              "expressions": [
+                                {
+                                  "identifier": "a1/SitnInstceAttribValue",
+                                  "literal": "'20220601'",
+                                  "operator": "ge",
+                                },
+                              ],
+                            },
+                            "key": "a1",
+                            "operator": "ANY",
+                            "target": "a0/_AttributeValue",
+                            "type": "lambda",
+                          },
+                        },
+                        {
+                          "identifier": {
+                            "expression": {
+                              "expressions": [
+                                {
+                                  "identifier": "a1/SitnInstceAttribValue",
+                                  "literal": "'20220601'",
+                                  "operator": "le",
+                                },
+                              ],
+                            },
+                            "key": "a1",
+                            "operator": "ANY",
+                            "target": "a0/_AttributeValue",
+                            "type": "lambda",
+                          },
+                        },
+                      ],
+                      "operator": "AND",
+                    },
+                    "key": "a0",
+                    "operator": "ANY",
+                    "target": "t/_Attribute",
+                    "type": "lambda",
+                  },
+                },
+              ],
+            },
+            "key": "t",
+            "operator": "ANY",
+            "target": "_Trigger",
+            "type": "lambda",
+          },
+        },
+      ],
+      "isGroup": true,
+      "operator": undefined,
+    },
+    {
+      "identifier": "SitnBaseTemplateID",
+      "literal": "'FICA_MASSACT_MSG_MONITOR'",
+      "operator": "eq",
+    },
+  ],
+  "operator": "AND",
+}
+`;
